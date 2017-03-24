@@ -33,17 +33,6 @@ class MessageViewController: JSQMessagesViewController  {
     
     
     func getMessages() {
-        FIRDatabase.database().reference().child("messages").child(self.channelId).observe(.childAdded, with: { (snapshot) in
-                        if let message = snapshot.value as? [String: Any] {
-                if let sender = message["from"] as? String, let text = message["content"] as? String {
-                    let msg = JSQMessage(senderId: sender, displayName: sender, text: text)
-                    self.messages.append(msg!)
-                    self.collectionView.reloadData()
-                }
-            }
-       
-           
-        })
         
     }
     
@@ -53,50 +42,11 @@ class MessageViewController: JSQMessagesViewController  {
 
     override func didPressSend(_ button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: Date!) {
         
-
-        
-        checkForUser { (exist) in
-            self.sendMessage(text, sender: senderId)
-        }
-        
         
         self.finishSendingMessage(animated: true)
     }
     
     
-    
-    
-    private func checkForUser(completion:@escaping (Bool)->()) {
-        FIRDatabase.database().reference().child("channels").child(channelId).child("participants").observeSingleEvent(of: .value, with: { (snapshot) in
-           
-            if let participantDict = snapshot.value as? [String: Any] {
-                if (participantDict[self.senderId] != nil) {
-                   
-                    completion(true)
-                } else {
-                    
-                    FIRDatabase.database().reference().child("channels").child(self.channelId).child("participants").child(self.senderId).setValue(true)
-                    FIRDatabase.database().reference().child("users").child(self.senderId).child("channels").child(self.channelId).setValue(true)
-                    
-                    
-                    completion(false)
-                    
-                }
-            }
-        })
-        
-    }
-    
-    
-   private func sendMessage(_ msg: String, sender: String) {
-        let msgDict = ["content":msg, "from":sender]
-        FIRDatabase.database().reference().child("messages").child(self.channelId).childByAutoId().setValue(msgDict)
-        FIRDatabase.database().reference().child("channels").child(channelId).child("lastMessage").setValue(msg)
-    }
-    
-    
-    
-
 
 }
 //MARK: - CollectionView 

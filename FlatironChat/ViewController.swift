@@ -14,7 +14,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       
     }
 
 
@@ -22,15 +22,9 @@ class ViewController: UIViewController {
         if let screenName = screenNameField.text {
             
             UserDefaults.standard.set(screenName, forKey: "screenName")
-            
-            FIRAuth.auth()?.signInAnonymously(completion: { (user, error) in
-                self.performSegue(withIdentifier: "openChannel", sender: self)
-            })
-            
-            
-        
-            
+            self.performSegue(withIdentifier: "openChannel", sender: self)
         }
+        
     }
 
 }
