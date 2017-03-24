@@ -1,10 +1,6 @@
 ## Firebase Pairing Lab
 
-
-![](https://media.giphy.com/media/3o6Ztofdod3yPGO8tG/source.gif)
-![](https://media.giphy.com/media/oXDVTDfRYNKms/giphy.gif)
-
-### Documentation
+### Documentation (Must Read)
 
 * [Getting Started](https://firebase.google.com/docs/database/ios/start)
 * [How to Structure Data](https://firebase.google.com/docs/database/ios/structure-data)
@@ -23,3 +19,8 @@ Create an app like the demo that can display a tableView of channels open and ca
 ### Video Demo
 
 [Demo](https://s3-us-west-2.amazonaws.com/curriculum-content/ios/firebase/screenshotvideo.mp4)
+
+
+
+![](https://media.giphy.com/media/3o6Ztofdod3yPGO8tG/source.gif)
+![](https://media.giphy.com/media/oXDVTDfRYNKms/giphy.gif?1)
