@@ -1,0 +1,6 @@
+framework module Pods_FlatironChat {
+  umbrella header "Pods-FlatironChat-umbrella.h"
+
+  export *
+  module * { export * }
+}

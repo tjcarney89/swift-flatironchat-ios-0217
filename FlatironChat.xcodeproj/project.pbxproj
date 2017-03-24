@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8205F0321BE8B3549AC4D1FF /* Pods_FlatironChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EC0CAFFF4DFFC4FD6D9E565 /* Pods_FlatironChat.framework */; };
 		8F5D28A61E84B6F600600004 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5D28A51E84B6F600600004 /* AppDelegate.swift */; };
 		8F5D28A81E84B6F600600004 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5D28A71E84B6F600600004 /* ViewController.swift */; };
 		8F5D28AB1E84B6F600600004 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F5D28A91E84B6F600600004 /* Main.storyboard */; };
 		8F5D28AD1E84B6F600600004 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F5D28AC1E84B6F600600004 /* Assets.xcassets */; };
 		8F5D28B01E84B6F600600004 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F5D28AE1E84B6F600600004 /* LaunchScreen.storyboard */; };
 		8F5D28BB1E84B6F600600004 /* FlatironChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5D28BA1E84B6F600600004 /* FlatironChatTests.swift */; };
+		8F5D28C61E84B81B00600004 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5D28C51E84B81B00600004 /* ChannelViewController.swift */; };
+		8F5D28C81E84B8B800600004 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5D28C71E84B8B800600004 /* MessageViewController.swift */; };
+		8F5D28CE1E84C0B700600004 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F5D28CD1E84C0B700600004 /* GoogleService-Info.plist */; };
+		8F86C9631E84E6B400EE92FB /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F86C9621E84E6B400EE92FB /* Message.swift */; };
+		8F86C9651E84E6BB00EE92FB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F86C9641E84E6BB00EE92FB /* User.swift */; };
+		8F86C9671E84E6C200EE92FB /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F86C9661E84E6C200EE92FB /* Channel.swift */; };
+		902A27DCF1F5B2053B6FD29C /* Pods_FlatironChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 443EF524F9F2B59D09BA03C2 /* Pods_FlatironChatTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01B6CC3AA3B663CF9EA3D611 /* Pods-FlatironChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlatironChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlatironChat/Pods-FlatironChat.debug.xcconfig"; sourceTree = "<group>"; };
+		18EBF7955F9CA76709A69F9E /* Pods-FlatironChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlatironChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlatironChat/Pods-FlatironChat.release.xcconfig"; sourceTree = "<group>"; };
+		2EC0CAFFF4DFFC4FD6D9E565 /* Pods_FlatironChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlatironChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41D2A524199086D09F370A3E /* Pods-FlatironChatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlatironChatTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlatironChatTests/Pods-FlatironChatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		443EF524F9F2B59D09BA03C2 /* Pods_FlatironChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlatironChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C0B60DB153000CFE515BDB4 /* Pods-FlatironChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlatironChatTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlatironChatTests/Pods-FlatironChatTests.release.xcconfig"; sourceTree = "<group>"; };
 		8F5D28A21E84B6F600600004 /* FlatironChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlatironChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F5D28A51E84B6F600600004 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F5D28A71E84B6F600600004 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +50,12 @@
 		8F5D28B61E84B6F600600004 /* FlatironChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlatironChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F5D28BA1E84B6F600600004 /* FlatironChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatironChatTests.swift; sourceTree = "<group>"; };
 		8F5D28BC1E84B6F600600004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F5D28C51E84B81B00600004 /* ChannelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
+		8F5D28C71E84B8B800600004 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		8F5D28CD1E84C0B700600004 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8F86C9621E84E6B400EE92FB /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		8F86C9641E84E6BB00EE92FB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8F86C9661E84E6C200EE92FB /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8205F0321BE8B3549AC4D1FF /* Pods_FlatironChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				902A27DCF1F5B2053B6FD29C /* Pods_FlatironChatTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +84,8 @@
 				8F5D28A41E84B6F600600004 /* FlatironChat */,
 				8F5D28B91E84B6F600600004 /* FlatironChatTests */,
 				8F5D28A31E84B6F600600004 /* Products */,
+				8F7F608ED6F43E5D9586E06C /* Pods */,
+				BD25E9995113766FD23E734A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,12 +101,12 @@
 		8F5D28A41E84B6F600600004 /* FlatironChat */ = {
 			isa = PBXGroup;
 			children = (
-				8F5D28A51E84B6F600600004 /* AppDelegate.swift */,
-				8F5D28A71E84B6F600600004 /* ViewController.swift */,
-				8F5D28A91E84B6F600600004 /* Main.storyboard */,
-				8F5D28AC1E84B6F600600004 /* Assets.xcassets */,
-				8F5D28AE1E84B6F600600004 /* LaunchScreen.storyboard */,
-				8F5D28B11E84B6F600600004 /* Info.plist */,
+				8F86C96C1E84E6F600EE92FB /* App Delegate */,
+				8F86C96B1E84E6ED00EE92FB /* Views */,
+				8F86C9681E84E6C600EE92FB /* Models */,
+				8F86C96A1E84E6E600EE92FB /* Controllers */,
+				8F86C96D1E84E70000EE92FB /* Storyboards */,
+				8F86C9691E84E6DC00EE92FB /* Resources */,
 			);
 			path = FlatironChat;
 			sourceTree = "<group>";
@@ -96,6 +120,80 @@
 			path = FlatironChatTests;
 			sourceTree = "<group>";
 		};
+		8F7F608ED6F43E5D9586E06C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01B6CC3AA3B663CF9EA3D611 /* Pods-FlatironChat.debug.xcconfig */,
+				18EBF7955F9CA76709A69F9E /* Pods-FlatironChat.release.xcconfig */,
+				41D2A524199086D09F370A3E /* Pods-FlatironChatTests.debug.xcconfig */,
+				4C0B60DB153000CFE515BDB4 /* Pods-FlatironChatTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8F86C9681E84E6C600EE92FB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8F86C9621E84E6B400EE92FB /* Message.swift */,
+				8F86C9641E84E6BB00EE92FB /* User.swift */,
+				8F86C9661E84E6C200EE92FB /* Channel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8F86C9691E84E6DC00EE92FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8F5D28AC1E84B6F600600004 /* Assets.xcassets */,
+				8F5D28B11E84B6F600600004 /* Info.plist */,
+				8F5D28CD1E84C0B700600004 /* GoogleService-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8F86C96A1E84E6E600EE92FB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8F5D28A71E84B6F600600004 /* ViewController.swift */,
+				8F5D28C51E84B81B00600004 /* ChannelViewController.swift */,
+				8F5D28C71E84B8B800600004 /* MessageViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8F86C96B1E84E6ED00EE92FB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8F86C96C1E84E6F600EE92FB /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				8F5D28A51E84B6F600600004 /* AppDelegate.swift */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		8F86C96D1E84E70000EE92FB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8F5D28A91E84B6F600600004 /* Main.storyboard */,
+				8F5D28AE1E84B6F600600004 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		BD25E9995113766FD23E734A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EC0CAFFF4DFFC4FD6D9E565 /* Pods_FlatironChat.framework */,
+				443EF524F9F2B59D09BA03C2 /* Pods_FlatironChatTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F5D28BF1E84B6F600600004 /* Build configuration list for PBXNativeTarget "FlatironChat" */;
 			buildPhases = (
+				71D864448493710A4BAE7A77 /* [CP] Check Pods Manifest.lock */,
 				8F5D289E1E84B6F600600004 /* Sources */,
 				8F5D289F1E84B6F600600004 /* Frameworks */,
 				8F5D28A01E84B6F600600004 /* Resources */,
+				08090DE476A80EFA286833D8 /* [CP] Embed Pods Frameworks */,
+				835468F12AE4CD57FBAB94DF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +221,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8F5D28C21E84B6F600600004 /* Build configuration list for PBXNativeTarget "FlatironChatTests" */;
 			buildPhases = (
+				0377933658BD4AC915B472D6 /* [CP] Check Pods Manifest.lock */,
 				8F5D28B21E84B6F600600004 /* Sources */,
 				8F5D28B31E84B6F600600004 /* Frameworks */,
 				8F5D28B41E84B6F600600004 /* Resources */,
+				E9F644520DFB9AB0747E3ADB /* [CP] Embed Pods Frameworks */,
+				D1E1867CE023741915498DD8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F5D28B01E84B6F600600004 /* LaunchScreen.storyboard in Resources */,
+				8F5D28CE1E84C0B700600004 /* GoogleService-Info.plist in Resources */,
 				8F5D28AD1E84B6F600600004 /* Assets.xcassets in Resources */,
 				8F5D28AB1E84B6F600600004 /* Main.storyboard in Resources */,
 			);
@@ -196,12 +301,110 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0377933658BD4AC915B472D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		08090DE476A80EFA286833D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlatironChat/Pods-FlatironChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71D864448493710A4BAE7A77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		835468F12AE4CD57FBAB94DF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlatironChat/Pods-FlatironChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1E1867CE023741915498DD8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlatironChatTests/Pods-FlatironChatTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9F644520DFB9AB0747E3ADB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlatironChatTests/Pods-FlatironChatTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8F5D289E1E84B6F600600004 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F86C9671E84E6C200EE92FB /* Channel.swift in Sources */,
 				8F5D28A81E84B6F600600004 /* ViewController.swift in Sources */,
+				8F5D28C61E84B81B00600004 /* ChannelViewController.swift in Sources */,
+				8F86C9651E84E6BB00EE92FB /* User.swift in Sources */,
+				8F86C9631E84E6B400EE92FB /* Message.swift in Sources */,
+				8F5D28C81E84B8B800600004 /* MessageViewController.swift in Sources */,
 				8F5D28A61E84B6F600600004 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +540,7 @@
 		};
 		8F5D28C01E84B6F600600004 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01B6CC3AA3B663CF9EA3D611 /* Pods-FlatironChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WNAGBXF4G9;
@@ -350,6 +554,7 @@
 		};
 		8F5D28C11E84B6F600600004 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18EBF7955F9CA76709A69F9E /* Pods-FlatironChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = WNAGBXF4G9;
@@ -363,6 +568,7 @@
 		};
 		8F5D28C31E84B6F600600004 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41D2A524199086D09F370A3E /* Pods-FlatironChatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -378,6 +584,7 @@
 		};
 		8F5D28C41E84B6F600600004 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C0B60DB153000CFE515BDB4 /* Pods-FlatironChatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -410,6 +617,7 @@
 				8F5D28C11E84B6F600600004 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8F5D28C21E84B6F600600004 /* Build configuration list for PBXNativeTarget "FlatironChatTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +626,7 @@
 				8F5D28C41E84B6F600600004 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
