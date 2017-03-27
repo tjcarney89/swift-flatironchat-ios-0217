@@ -16,33 +16,32 @@ class MessageViewController: JSQMessagesViewController  {
     lazy var incomingBubbleImageView: JSQMessagesBubbleImage = self.setupIncomingBubble()
     var messages = [JSQMessage]()
     var channelId = ""
-    
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
-        
         getMessages()
-        
-        
+    
     }
-    
-    
-    
     
     func getMessages() {
-        
-    }
-    
+        FireBaseManager.loadMessages(channel: channelId) { (messages) in
+            let sortedMessages = messages.sorted(by: { (first, second) -> Bool in
+                first.date < second.date
+            })
+            self.messages = sortedMessages
+            self.collectionView.reloadData()
+        }
 
-    
+    }
     
 
     override func didPressSend(_ button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: Date!) {
-        
-        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'@'hh:mm:ss"
+        let newDate = dateFormatter.string(from: date)
+        FireBaseManager.addMessage(content: text, sender: FireBaseManager.user!, channel: channelId, date: newDate) { }
+        FireBaseManager.addParticipant(name: FireBaseManager.user!, channel: channelId)
         self.finishSendingMessage(animated: true)
     }
     

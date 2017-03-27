@@ -10,22 +10,27 @@ import UIKit
 import FirebaseAuth
 
 class ViewController: UIViewController {
-    @IBOutlet weak var screenNameField: UITextField!
-
-    override func viewDidLoad() {
+        
+        override func viewDidLoad() {
         super.viewDidLoad()
        
     }
 
+    @IBOutlet weak var textField: UITextField!
 
     @IBAction func joinBtnPressed(_ sender: Any) {
-        if let screenName = screenNameField.text {
+        if let screenName = textField.text {
             
+            FireBaseManager.addUser(name: screenName)
             UserDefaults.standard.set(screenName, forKey: "screenName")
+            
+            
             self.performSegue(withIdentifier: "openChannel", sender: self)
         }
         
+
     }
+    
 
 }
 

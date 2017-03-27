@@ -11,26 +11,24 @@ import Firebase
 
 class ChannelViewController: UITableViewController {
     
-    
-    
     var channels = [Channel]()
     var user: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
     }
   
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        FireBaseManager.fetchChannels { (newChannels) in
+            self.channels = newChannels
+            self.tableView.reloadData()
+        }
        
     }
     
-    
-    
-
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -57,6 +55,7 @@ class ChannelViewController: UITableViewController {
         
         let create = UIAlertAction(title: "Create", style: .default) { (action) in
             if let channel = alertController.textFields?[0].text {
+                FireBaseManager.createChannel(name: channel)
                
             }
         }
@@ -81,7 +80,6 @@ extension ChannelViewController {
         
         return channels.count
     }
-    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "channelCell", for: indexPath)

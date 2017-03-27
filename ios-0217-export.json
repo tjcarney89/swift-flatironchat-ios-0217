@@ -1,0 +1,52 @@
+{
+  "channels" : {
+    "ios0217" : {
+      "lastMessage" : "Hello",
+      "participants" : {
+        "johann" : true
+      }
+    },
+    "web0217" : {
+      "lastMessage" : "Yo",
+      "participants" : {
+        "johann" : true,
+        "steven" : true
+      }
+    }
+  },
+  "messages" : {
+    "ios0217" : {
+      "-Kfyv-H9U6hOpA-FVR3l" : {
+        "content" : "Labby Lab Labs",
+        "from" : "johann"
+      },
+      "-Kfyv7BwG7FaB_stODzk" : {
+        "content" : "Hello",
+        "from" : "johann"
+      }
+    },
+    "web0217" : {
+      "-KfyvAoVXP9M_YRt2RqR" : {
+        "content" : "Well hello web",
+        "from" : "Steven"
+      },
+      "-Kfz2DSYI8RQaqNA9IxT" : {
+        "content" : "Yo",
+        "from" : "johann"
+      }
+    }
+  },
+  "users" : {
+    "johann" : {
+      "channels" : {
+        "ios0217" : true,
+        "web0217" : true
+      }
+    },
+    "steven" : {
+      "channels" : {
+        "web0217" : true
+      }
+    }
+  }
+}
